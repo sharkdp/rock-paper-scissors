@@ -70,9 +70,6 @@ renderTable pRock pPaper pScissors pLizard pSpock =
         rowA Lizard   Spock    Paper    Scissors Rock
         rowA Spock    Scissors Rock     Paper    Lizard
 
-
-
-
   where
     simple = isNothing pLizard
 

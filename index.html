@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Rock-Paper-Scissors Regex</title>
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700|Source+Code+Pro" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+          <h1>Rock-Paper-Scissors Regex</h1>
+          <p id="quote">
+            (original problem formulation and solutions on <a href="https://codegolf.stackexchange.com/q/129941">codegolf.stackexchange.com</a>)
+          </p>
+          <p>
+            Write three regexes <b>R</b>, <b>P</b> and <b>S</b> such that they match each other
+            in a cyclic Rock, Paper, Scissors fashion. In particular, <b>R</b> matches <b>S</b>,
+            <b>S</b> matches <b>P</b> and <b>P</b> matches <b>R</b>, but <b>R</b> doesn't match
+            <b>S</b>, <b >P</b> doesn't match <b>R</b> and <b>P</b> doesn't match <b>S</b>.
+
+          </p>
+          <div id="controls1"></div>
+          <div id="output1"></div>
+
+          <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors#Additional_weapons"><img src="rpslv.svg" title="Rock-Paper-Scissors-Lizard-Spock" id="rpslv"></a>
+          <!-- https://commons.wikimedia.org/wiki/File:Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg -->
+          <h2>Rock-Paper-Scissors-Lizard-Spock</h2>
+          <p>
+            For this challenge, you'll solve a tougher version of the above problem, based on the
+            RPS variant Rock, Paper, Scissors, Lizard, Spock (as popularised by <i>The Big Bang
+            Theory</i>). In RPSLV, there are five different symbols, that beat each other in two
+            cycles:
+            <ul>
+              <li>Rock → Scissors → Lizard → Paper → Spock → Rock</li>
+              <li>Rock → Lizard → Spock → Scissors → Paper → Rock</li>
+            </ul>
+            You should write five regexes <b>R</b>, <b>P</b>, <b>S</b>, <b>L</b> and <b>V</b> which mimic this structure when given to each other as input.
+          </p>
+          <div id="controls2"></div>
+          <div id="output2"></div>
+        </div>
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>
